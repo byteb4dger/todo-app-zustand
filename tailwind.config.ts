@@ -1,0 +1,87 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        text: {
+          50: "#ecf2f8",
+          100: "#d9e6f2",
+          200: "#b3cde5",
+          300: "#8db4d8",
+          400: "#679bcb",
+          500: "#4182be",
+          600: "#346898",
+          700: "#274e72",
+          800: "#1a344c",
+          900: "#0d1a26",
+          950: "#070d13",
+        },
+        background: {
+          50: "#ecf2f9",
+          100: "#d9e6f2",
+          200: "#b3cce6",
+          300: "#8cb2d9",
+          400: "#6699cc",
+          500: "#407fbf",
+          600: "#336699",
+          700: "#264c73",
+          800: "#19334d",
+          900: "#0d1926",
+          950: "#060d13",
+        },
+        primary: {
+          50: "#f9ecf2",
+          100: "#f2d9e6",
+          200: "#e6b3cc",
+          300: "#d98cb3",
+          400: "#cc6699",
+          500: "#bf4080",
+          600: "#993366",
+          700: "#73264d",
+          800: "#4d1933",
+          900: "#260d1a",
+          950: "#13060d",
+        },
+        secondary: {
+          50: "#ecf2f8",
+          100: "#d9e5f2",
+          200: "#b3cbe5",
+          300: "#8db1d8",
+          400: "#6797cb",
+          500: "#417dbe",
+          600: "#346498",
+          700: "#274b72",
+          800: "#1a324c",
+          900: "#0d1926",
+          950: "#070d13",
+        },
+        accent: {
+          50: "#f2f9ec",
+          100: "#e6f2d9",
+          200: "#cce6b3",
+          300: "#b3d98c",
+          400: "#99cc66",
+          500: "#80bf40",
+          600: "#669933",
+          700: "#4d7326",
+          800: "#334d19",
+          900: "#1a260d",
+          950: "#0d1306",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
