@@ -1,11 +1,7 @@
 import { Todo, useTodoStore } from "@/store/todo.store";
 import { MdDelete } from "react-icons/md";
 
-interface TodoItemProps {
-  todo: Todo;
-}
-
-const TodoItem = ({ todo }: TodoItemProps) => {
+const TodoItem = ({ todo }: any) => {
   const { editTodo, removeTodo, toggleTodo } = useTodoStore((state) => state);
   return (
     <li className="mb-2 flex justify-center rounded-md bg-secondary-700 p-2 align-middle">
@@ -30,4 +26,4 @@ const TodoItem = ({ todo }: TodoItemProps) => {
   );
 };
 
-export { TodoItem };
+export default TodoItem;
