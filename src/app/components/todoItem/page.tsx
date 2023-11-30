@@ -5,7 +5,7 @@ interface TodoItemProps {
   todo: Todo;
 }
 
-const TodoItem = ({ todo }: any) => {
+const TodoItem = ({ todo }: TodoItemProps) => {
   const { editTodo, removeTodo, toggleTodo } = useTodoStore((state) => state);
   return (
     <li className="mb-2 flex justify-center rounded-md bg-secondary-700 p-2 align-middle">
@@ -30,4 +30,4 @@ const TodoItem = ({ todo }: any) => {
   );
 };
 
-export default TodoItem;
+export { TodoItem as default };
