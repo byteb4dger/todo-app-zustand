@@ -1,5 +1,5 @@
-import { MdDelete } from "react-icons/md";
 import { Todo, useTodoStore } from "@/store/todo.store";
+import { MdDelete } from "react-icons/md";
 
 interface TodoItemProps {
   todo: Todo;
@@ -8,7 +8,7 @@ interface TodoItemProps {
 const TodoItem = ({ todo }: TodoItemProps) => {
   const { editTodo, removeTodo, toggleTodo } = useTodoStore((state) => state);
   return (
-    <li className="bg-secondary-700 mb-2 flex justify-center rounded-md p-2 align-middle">
+    <li className="mb-2 flex justify-center rounded-md bg-secondary-700 p-2 align-middle">
       <input
         type="checkbox"
         checked={todo.completed}
