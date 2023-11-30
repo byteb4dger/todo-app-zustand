@@ -30,4 +30,4 @@ const TodoItem = ({ todo }: TodoItemProps) => {
   );
 };
 
-export { TodoItem as default };
+export { TodoItem };
