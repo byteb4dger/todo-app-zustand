@@ -1,3 +1,5 @@
+"use client";
+
 import { useTodoStore } from "@/store/todo.store";
 import { useState } from "react";
 
@@ -21,9 +23,9 @@ const Add = () => {
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          className="text-background-950 rounded-lg p-2 text-xl"
+          className="rounded-lg p-2 text-xl text-background-950"
         />
-        <button className="bg-secondary-700 rounded-lg p-3" type="submit">
+        <button className="rounded-lg bg-secondary-700 p-3" type="submit">
           Add Todo
         </button>
       </fieldset>
