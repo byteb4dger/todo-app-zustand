@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <body
-        className={`${inter.className} bg-background-950 text-text-50 box-border h-screen px-14 py-24 font-semibold lg:px-24 2xl:px-32 `}
+        className={`${inter.className} box-border h-screen bg-background-950 px-14 py-24 font-semibold text-text-50 lg:px-24 2xl:px-32 `}
       >
         <Title />
         <main className="flex justify-center ">{children}</main>
