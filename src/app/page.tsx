@@ -3,7 +3,7 @@
 import Actions from "./components/actions/page";
 import Add from "./components/add/page";
 import { useTodoStore } from "@/store/todo.store";
-import TodoItem from "./components/todoItem/page";
+import { TodoItem } from "./components/todoItem/page";
 
 export default function Home() {
   const { todos } = useTodoStore((state) => state);
