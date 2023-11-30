@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col gap-y-10">
-      <section className="bg-primary-500 flex h-auto w-auto flex-col justify-center self-center rounded-lg">
+      <section className="flex h-auto w-auto flex-col justify-center self-center rounded-lg bg-primary-500">
         <Add />
         <Actions />
       </section>
