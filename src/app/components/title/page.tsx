@@ -1,5 +1,3 @@
-import React from "react";
-
 const Title = () => {
   return (
     <header className="flex flex-col pb-16">
